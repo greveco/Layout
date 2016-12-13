@@ -1,0 +1,70 @@
+SELECT "DocEntry", "DocNum"  FROM OQUT Where "DocNum" = 46
+
+
+
+
+
+1. Generalidades del Servicio Ofertado
+1.1. El servicio se llevará a cabo por un ingeniero de Galénica S.A. en la dirección |   |
+1.2. Ubicada en la ciudad de |   |
+1.3. El servicio cotizado sólo se realizará en los equipos que cuenten con la respectiva Orden de Compra emitida por el cliente. No se efectuarán servicios de ningún tipo que no estén respaldados por una Orden de Compra.
+1.4. La emisión de la Orden de Compra significa la aceptación de todos los Términos y Condiciones aquí especificados.
+
+2. Condiciones de Garantía
+
+2.1. Garantía: |3 MESES |desde realizado el servicio por mantenimientopreventivo, correctivo o desde recepcionado el repuesto
+2.2. El servicio de Mantenimiento Preventivo o Correctivo tiene garantía para todos los equipos intervenidos por personal de Galénica S.A. y que estén individualizados en esta cotización, la que comienza a regir desde la fecha en que el servicio fue ejecutado en cada uno.
+2.3. Para Mantenciones Preventivas o Correctivas la garantía cubre desperfectos producidos exclusivamente en las partes o piezas intervenidas durante el servicio, y que tengan directa relación con el servicio prestado.
+2.4. El servicio de Diagnóstico en dependencias del cliente o en taller de Galénica S.A. en Santiago no cuenta con garantía, ya que sólo consiste en la detección de fallas y, en ningún caso, se removerán piezas o se intervendrá el equipo.
+2.5. Cotizaciones que sólo incluyan la venta de un repuesto tendrán garantía desde que éste es recepcionado por el cliente.
+2.6. Para las cotizaciones que contemplen el envío de equipos, partes o repuestos de equipos a taller de Galénica S.A. en Santiago para Mantenciones Preventivas y/o Correctivas, la garantía consiste en la reparación del equipo en las mismas condiciones de la cotización, es decir, en taller de Galénica S.A. En ningún caso la garantía contempla la visita de personal de Galénica S.A. a dependencias del cliente; si el cliente así lo requiere se cotizará el traslado y gastos asociados.
+
+3. Exclusiones de la Garantía
+3.1. Fallas presentadas durante el servicio o durante el período de garantía en partes o piezas del equipo no intervenidas durante el servicio, y que no tengan relación directa con el servicio prestado.
+3.2. Nuevas fallas detectadas luego de reparar o reemplazar la parte o pieza dañada, cuyo desperfecto esté enmascarado por la falla inicial. Para este caso particular, se enviará una nueva cotización al cliente indicando los costos de partes, piezas, mano de obra y todos los gastos relacionados.
+3.3. Defectos causados por mal uso del equipo por personal ajeno a Galénica S.A. Esto incluye la mala operación en el equipo al no seguir con rigurosidad las especificaciones técnicas del fabricante y/o sugeridas por Galénica S.A.
+3.4. Reparaciones, modificaciones, cambio de piezas e/o instalación de repuestos realizados por el usuario o por servicios ajenos a Galénica S.A.
+3.5. Equipos que hayan sido trasladados desde su ubicación original por el usuario o por servicios ajenos a Galénica S.A. En este caso el equipo trasladado pierde toda garantía.
+3.6. Daños provocados por la utilización de piezas o repuestos alternativos a la marca y que no se ajusten a las especificaciones del fabricante.
+3.7. Daños causados por casos fortuitos o de fuerza mayor como caídas, golpes, accidentes, incendios, cortocircuitos, inundaciones, desastres naturales.
+3.8. Daños provocados por hechos imputables al cliente o a terceros, como corrosión en el equipo o sus partes causada por el derrame de ciertas soluciones, utilización de solventes inadecuados, falta de diligencia en la mantención o uso de los equipos.
+3.9. Galénica S.A. no se hará responsable por deterioros o pérdidas de los repuestos y/o piezas en dependencias del cliente luego de que hayan sido recepcionados.
+
+4. Obligaciones del cliente
+4.1. No permitir la intervención técnica de cualquier índole en los equipos individualizados en la presente cotización por parte de personal no autorizado por Galénica S.A.
+4.2. Contar con el conocimiento y/o personal capacitado para la correcta utilización, limpieza y cuidado de los equipos.
+4.3. Permitir el acceso a personal de Galénica S.A. a las dependencias en que se ubiquen los equipos, con el fin de realizar los trabajos acordados y de brindar toda la información necesaria para resolver las fallas.
+4.4. Contar con los Equipos para la realización de los servicios coordinados por concepto de Mantenimiento Preventivo, Mantenimiento Correctivo o Diagnóstico desocupados y disponibles para la realización del servicio desde la hora acordada entre Galénica S.A. y el cliente. Retrasos de más de 30 minutos en la entrega de los equipos ocasionará la recoordinación de los trabajos con el consecuente recargo por realizar una visita extra.
+4.5. Notificar a Galénica S.A. por cualquier proyecto de reposicionamiento de uno o varios de los equipos aquí cotizados. Galénica S.A. podrá ajustar el precio pactado en la cotización en caso de que el cambio de lugar o sede afecte los costos de prestación servicio.
+4.6. Operar los equipos exclusivamente con elementos y materiales que cumplan con las especificaciones técnicas recomendados por fabricante.
+4.7. Asegurarse de que las instalaciones, construcciones, condiciones ambientales y eléctricas en donde funcionen los equipos cumplan con las especificaciones determinadas por el fabricante o por Galénica S.A.
+4.8. Efectuar los pagos del servicio contratado dentro de 30 días contados desde el envío de la factura o, en caso de existir un contrato, dentro de los plazos en él estipulados.
+4.9. Emitir la Orden de Compra cuando se requieran reparaciones y/o repuestos no incluídos en la presente cotización. Galénica S.A. no importará repuestos desde fábrica, no enviará repuestos a cliente ni reparará equipos sin tener este documento.
+4.10. Informar oportunamente a Galénica S.A. si ha decidido dar de baja alguno de los equipos individualizados en la presente cotización. La modificación en el número de equipos significará el recálculo de los costos del servicio cotizado
+4.11. Contar con los insumos y reactivos apropiados, y preparados según sea el caso, para realizar pruebas en el equipo. No es responsabilidad del personal de Galénica S.A. proporcionarlos ni prepararlos.
+
+5. Obligaciones de Galénica S.A.
+5.1. Ejecutar las labores encomendadas con la mayor calidad y eficiencia, según pautas del fabricante y en los tiempos definidos entre Galénica S.A. y el cliente.
+5.2. Contar con personal debidamente calificado y entrenado para la ejecución de los servicios descritos en esta cotización.
+5.3. Guardar la debida confidencialidad, reserva de las labores que desempeñe y respeto de toda la información que posea y adquiera donde el cliente.
+5.4. Someter a consideración del cliente, mediante la respectiva cotización, cualquier cambio de pieza o parte que sea necesario realizar y que no esté incluido en esta cotización. Si el cliente aprueba la cotización debe emitir la respectiva Orden de Compra.
+5.5. En la eventualidad de que se requieran repuestos que no estén en stock, Galénica S.A. se obliga a solicitar importación desde fábrica en el plazo más corto posible, previa recepción de la Orden de Compra emitida por el clente.
+5.6. Responder a las solicitudes de Servicios de Mantenimiento Preventivo, Correctivo o de Diagnóstico solicitados por el cliente dentro de los plazos convenidos y acorde a las modalidades pactadas.
+5.7. Evitar todo daño, deterioro y suciedad en las dependencias e instalaciones del cliente durante la realización del trabajo.
+5.8. Si Galénica S.A. sugiere dar de baja alguno de los Equipos individualizados en la presenta cotización, esto debe ser aprobado por el cliente. La modificación en el número de equipos significará el recálculo de los costos del servicio cotizado.
+5.9. Luego de realizado el servicio, Galénica S.A. debe enviar un informe técnico detallando el trabajo realizado, las medidas correctivas tomadas y el estado final del equipo .
+
+6. Prohibiciones de Galénica S.A.
+6.1. Manipular algún elemento o equipo del cliente que no esté individualizado en la presente cotización.
+6.2. Intervenir cualquier equipo, pieza o parte instalada en los equipos que no sean representación de Galénica S.A.
+6.3. Reparar cualquier pieza, parte o equipo que presente claros rasgos de haber sido previamente intervenidos por personal ajeno a Galénica S.A.
+6.4. Instalar cualquier parte o pieza en los equipos individualizado en la presente cotización que no sea previamente certificado o provisto por Galénica S.A.
+6.5. Trasladar o mover los equipos aquí individualizados desde sus respectivos emplazamientos. Este servicio debe ser cotizado aparte.
+6.6. Interferir con las labores normales de los funcionarios del cliente sin la debida autorización.
+6.7. Informar a personas ajenas al establecimiento de cualquier hecho, antecedente o situación que adquiera en conocimiento durante el desempeño de sus funciones.
+
+7. Exclusiones del Servicio
+7.1. Galénica S.A. tiene como norma no intervenir ningún equipo, repuesto o pieza instalada que no sea de su representación.
+7.2. Todo repuesto que no esté especificado en esta cotización no forma parte de la misma, si se necesita algún repuesto o pieza adicional deberá ser cotizado de manera aparte.
+7.3. Para el caso de modelos de equipos, partes o piezas descontinuados por el fabricante Galénica S.A. no está en la obligación de dejar los equipos operativos. Si estos equipos no pueden ser reparados Galénica S.A. recomendará darlos de baja.
+7.4. Para el caso de cámaras y sistemas de micromanipulación instalados con microscopios Olympus, Galénica S.A. informa que su personal sólo puede hacer una inspección visual y en ningún caso una intervención interna. Para estos casos lo recomendado por el fabricante es el envío de las partes a fábrica.
