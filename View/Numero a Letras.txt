@@ -1,0 +1,280 @@
+//Monto en letras
+numberVar x := tonumber({Totales.MntTotal}); 
+
+stringVar unidad :="" ; 
+stringVar decena :="" ; 
+stringVar centena :="" ; 
+
+stringVar umil :="" ; 
+stringVar dmil :="" ; 
+stringVar cmil :="" ; 
+
+stringVar umill :="" ; 
+stringVar dmill :="" ; 
+stringVar cmill :="" ; 
+
+stringVar umilmil :="" ; 
+stringVar dmilmil :="" ; 
+stringVar cmilmil :="" ; 
+
+stringVar caracter:="" ; 
+numberVar i :=0 ; 
+numberVar long :=length(totext(x)) ; 
+numberVar lugar :=0; 
+
+caracter:=totext(x); 
+
+i=long; 
+lugar:=long; 
+//000 123 456 789.00 
+for i :=1 to long step 1 do 
+( 
+//123 decimales 456 unidades 
+if i=4 then 
+( 
+unidad:=left(right(caracter,i),1); 
+) 
+else if i=5 then 
+( 
+decena:=left(right(caracter,i),1); 
+) 
+
+else if i=6 then 
+( 
+centena:=left(right(caracter,i),1); 
+); 
+
+//miles 
+
+if i=8 then 
+( 
+umil:=left(right(caracter,i),1); 
+) 
+else if i=9 then 
+( 
+dmil:=left(right(caracter,i),1); 
+) 
+
+else if i=10 then 
+( 
+cmil:=left(right(caracter,i),1); 
+); 
+
+//millones 
+if i=12 then 
+( 
+umill:=left(right(caracter,i),1); 
+) 
+else if i=13 then 
+( 
+dmill:=left(right(caracter,i),1); 
+) 
+
+else if i=14 then 
+( 
+cmill:=left(right(caracter,i),1); 
+); 
+
+//mil millones 
+if i=16 then 
+( 
+umilmil:=left(right(caracter,i),1); 
+) 
+else if i=17 then 
+( 
+dmilmil:=left(right(caracter,i),1); 
+) 
+
+else if i=18 then 
+( 
+cmilmil:=left(right(caracter,i),1); 
+) 
+
+); 
+////123 456 789.00 
+
+stringVar array unidades := ["un","dos","tres","cuatro","cinco","seis","siete","ocho","nueve"]; 
+stringVar array dieces := ["once","doce","trece","catorce","quince","dieciseis","diecisiete","dieciocho","diecinueve"]; 
+stringVar array decenas := ["diez","veinte","treinta","cuarenta","cincuenta","sesenta","setenta","ochenta","noventa"]; 
+stringVar array veintis := ["veintiun","veintidós","veintitrés","veinticuatro","veinticinco","veintiséis","veintisiete","veintiocho","veintinueve"]; 
+stringVar array centenas := ["cien","doscientos","trescientos","cuatrocientos","quinientos","seiscientos","setecientos","ochocientos","novecientos"];
+stringVar resultado:=""; 
+stringVar procesar:="N"; 
+
+//mil millones igual a los miles 
+procesar:="N"; 
+if val(cmilmil)>1 then 
+resultado:=resultado + centenas[val(cmilmil)] + " "
+else if val(cmilmil)=1 then 
+(
+if val(dmilmil)=0 and val(umilmil)=0 then
+resultado:=resultado + centenas[val(cmilmil)] + " "
+else resultado:=resultado + centenas[val(cmilmil)] + "to "
+);
+if val(dmilmil)>2 and val(umilmil)<>0 then 
+resultado:=resultado + decenas[val(dmilmil)] + " y "
+else if val(dmilmil)>2 then
+resultado:=resultado + decenas[val(dmilmil)] + " "
+else if val(dmilmil)=2 and val(umilmil)=0 then
+resultado:=resultado + decenas[val(dmilmil)] + " "
+else if val(dmilmil)=1 and val(umilmil)=0 then
+resultado:=resultado + decenas[val(dmilmil)] + " "
+else if val(dmilmil)=2 then 
+procesar:="D"
+else if val(dmilmil)=1 then 
+procesar:="S";
+
+if procesar="D" then //quiere decir que es un numero entre 21 y 30
+(
+if val(umilmil)>0 then resultado:=resultado + veintis[val(umilmil)] + " "
+)
+else if procesar="S" then //quiere decir que es un numero entre 11 y 20 
+( 
+if val(umilmil)>0 then 
+resultado:=resultado + dieces[val(umilmil)] + " "; 
+)
+else if val(umilmil)=1 then
+(
+resultado:= resultado + ""
+)
+else
+( 
+if val(umilmil)>1 then 
+resultado:=resultado + unidades[val(umilmil)] + " "; 
+);
+
+if val(cmilmil)+val(dmilmil)+val(umilmil) >0 then 
+resultado:=resultado + " mil " 
+else 
+resultado:=resultado + ""; 
+
+procesar:="N"; 
+if val(cmill)>1 then 
+resultado:=resultado + centenas[val(cmill)] + " "
+else if val(cmill)=1 then 
+(
+if val(dmill)=0 and val(umill)=0 then
+resultado:=resultado + centenas[val(cmill)] + " "
+else resultado:=resultado + centenas[val(cmill)] + "to "
+);
+if val(dmill)>2 and val(umil)<>0 then 
+resultado:=resultado + decenas[val(dmill)] + " y "
+else if val(dmill)>2 then
+resultado:=resultado + decenas[val(dmill)] + " "
+else if val(dmill)=2 and val(umill)=0 then
+resultado:=resultado + decenas[val(dmill)] + " "
+else if val(dmill)=1 and val(umill)=0 then
+resultado:=resultado + decenas[val(dmill)] + " "
+else if val(dmill)=2 then 
+procesar:="D"
+else if val(dmill)=1 then 
+procesar:="S"; 
+
+
+if procesar="D" then //quiere decir que es un numero entre 21 y 30
+(
+if val(umill)>0 then resultado:=resultado + veintis[val(umill)] + " "
+)
+else if procesar="S" then //quiere decir que es un numero entre 11 y 20 
+( 
+if val(umill)>0 then 
+resultado:=resultado + dieces[val(umill)] + " "; 
+) 
+else 
+( 
+if val(umill)>0 then 
+resultado:=resultado + unidades[val(umill)] + " "; 
+); 
+
+// 
+//Titulo final de millones 
+//
+if val(cmilmil)+val(dmilmil)+val(umilmil)+val (cmill)+val(dmill)>0 then 
+resultado:=resultado + " millones "
+else if val(cmill)+val(dmill)+val(umill) >1 then 
+resultado:=resultado + " millones " 
+else if val(umill) = 1 then 
+resultado:=resultado + " millon "; 
+
+procesar:="N"; 
+if val(cmil)>1 then 
+resultado:=resultado + centenas[val(cmil)] + " "
+else if val(cmil)=1 then 
+(
+if val(dmil)=0 and val(umil)=0 then
+resultado:=resultado + centenas[val(cmil)] + " "
+else resultado:=resultado + centenas[val(cmil)] + "to "
+);
+if val(dmil)>2 and val(umil)<>0 then 
+resultado:=resultado + decenas[val(dmil)] + " y "
+else if val(dmil)>2 then
+resultado:=resultado + decenas[val(dmil)] + " "
+else if val(dmil)=2 and val(umil)=0 then
+resultado:=resultado + decenas[val(dmil)] + " "
+else if val(dmil)=1 and val(umil)=0 then
+resultado:=resultado + decenas[val(dmil)] + " "
+else if val(dmil)=2 then 
+procesar:="D"
+else if val(dmil)=1 then 
+procesar:="S"; 
+
+if procesar="D" then //quiere decir que es un numero entre 21 y 30
+(
+if val(umil)>0 then resultado:=resultado + veintis[val(umil)] + " "
+)
+else if procesar="S" then //quiere decir que es un numero entre 11 y 20 
+( 
+if val(umil)>0 then 
+resultado:=resultado + dieces[val(umil)] + " "; 
+)
+else if val(umil)=1 then
+(
+resultado:= resultado + ""
+) 
+else 
+( 
+if val(umil)>1 then 
+resultado:=resultado + unidades[val(umil)] + " "; 
+); 
+if val(cmil)+ val(dmil)+ val(umil)>=1 then(
+resultado:=resultado + " mil "; );
+
+procesar:="N"; 
+if val(centena)>1 then 
+resultado:=resultado + centenas[val(centena)] + " "
+else if val(centena)=1 then 
+(
+if val(decena)=0 and val(unidad)=0 then
+resultado:=resultado + centenas[val(centena)] + " "
+else resultado:=resultado + centenas[val(centena)] + "to "
+);
+if val(decena)>2 and val(unidad)<>0 then 
+resultado:=resultado + decenas[val(decena)] + " y "
+else if val(decena)>2 then
+resultado:=resultado + decenas[val(decena)] + " "
+else if val(decena)=2 and val(unidad)=0 then
+resultado:=resultado + decenas[val(decena)] + " "
+else if val(decena)=1 and val(unidad)=0 then
+resultado:=resultado + decenas[val(decena)] + " "
+else if val(decena)=2 then 
+procesar:="D"
+else if val(decena)=1 then 
+procesar:="S"; 
+
+if procesar="D" then //quiere decir que es un numero entre 21 y 30
+(
+if val(unidad)>0 then resultado:=resultado + veintis[val(unidad)] + " "
+)
+else if procesar="S" then //quiere decir que es un numero entre 11 y 20 
+( 
+if val(unidad)>0 then 
+resultado:=resultado + dieces[val(unidad)] + " " 
+) 
+else 
+( 
+if val(unidad)=1 and val(decena)=0 and val(centena)=0 then 
+resultado:=resultado + unidades[val(unidad)] + "o "
+else if val(unidad)>0 then 
+resultado:=resultado + unidades[val(unidad)] + " "; 
+); 
+Ucase("son : " + resultado +" Pesos ")
